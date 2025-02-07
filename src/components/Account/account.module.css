@@ -1,0 +1,157 @@
+.accountPage{
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.accountUserWelcome{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.accountUserWelcome h2 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(90deg, var(--main-color), var(--main-color-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 70px;
+}
+
+.accountInfo{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--light-gray);
+    padding: 20px;
+}
+
+.infoBox{
+    width: 320px;
+    height: 220px;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    background-size: 200%;
+    background-color: var(--light-gray);
+    box-shadow: var(--main-color-light) 0px 3px 3px 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBox h3{
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 280px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.textBox {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.textBox span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0a004e;
+}
+
+.textBox .text{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.textBox svg{
+    margin-right: 7px;
+    color: var(--main-color-light);
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    font-size: 2.9rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.moneyTransfer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneyTransfer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.accountNumberInput{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border: 2px solid var(--gray);
+}
+
+.accountNumberInput::-webkit-inner-spin-button,
+.accountNumberInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.confirmBtn{
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(135deg, var(--main-color), var(--main-color-light));
+}
+
+.lastTransactions{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastTransactions h2{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.depositMoney{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
